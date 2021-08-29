@@ -3,7 +3,7 @@ from flask import Flask, request, render_template, url_for
 import random
 
 
-print("~~~~~~~~ TEMA VIII ~~~~~~~~")
+print("~~~~~~~~ Deck Of Cards ~~~~~~~~")
 print()
 print()
 
@@ -44,24 +44,12 @@ class Deck:
    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 app = Flask(__name__)
 
 
 @app.route('/main', methods = ["POST", "GET"])
 def main():
-    return "~~~~~~~~~~~~~~~~~~~~~~  Tema VIII ~~~~~~~~~~~~~~~~~~~~~~   \n\n\nHow many card do you want to add to the deck? [ADD THE NUMBER IN THE URL <>]"
+    return "~~~~~~~~~~~~~~~~~~~~~~  Deck Of Cards` ~~~~~~~~~~~~~~~~~~~~~~   \n\n\nHow many card do you want to add to the deck? [ADD THE NUMBER IN THE URL <>]"
 
 
 
@@ -104,14 +92,7 @@ def shuffle():
 
 
 
-
-
-
-
-    
-
-
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=true)
 
     
